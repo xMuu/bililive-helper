@@ -2,7 +2,7 @@
 
 一个用于 Bilibili 直播的 Hammerspoon 小工具，可以查看部分房间信息，快速到达直播间和直播设置页面，发送弹幕和显示弹幕悬浮窗。
 
-弹幕悬浮窗使用的是 [bilibili-live-chat](https://github.com/Tsuk1ko/bilibili-live-chat) ，
+弹幕悬浮窗使用的是 [bilibili-live-chat](https://github.com/Tsuk1ko/bilibili-live-chat) ，很好用的一个工具！快去 Star ！
 
 
 ## 截图展示
@@ -31,11 +31,10 @@ RoomID = "" -- 房间ID
 userRND = "" -- 用户 RND
 userCookie = "" -- 用户 Cookie
 userCSRF = "" -- CSRF Token
--- 使用 Chrome 或者其他浏览器登陆到直播间，打开发者工具的 Network 网络面板，手动发送一条弹幕，在 send 请求中获取相关信息填入即可
+-- 浏览器登陆到直播间，打开发者工具的 Network 网络面板，手动发送一条弹幕，在 send 请求中获取相关信息填入即可
 
 -- 弹幕面板相关 --
 viewXPoint = 1600 -- 弹幕面板横坐标
--- 
 viewYPoint = 150 -- 弹幕面板纵坐标
 viewWidth = 320 -- 弹幕面板宽度
 viewHeight = 450 -- 弹幕面板高度
@@ -45,3 +44,8 @@ danmakuStayTime = 20 -- 弹幕停留时间，单位：秒
 danmakuSpeed = 1000 -- 弹幕显示速度，单位：条/秒，超过的弹幕会随机忽略
 showGiftCombine = 1000 -- 弹幕合并时间，单位：毫秒
 ```
+
+
+## 其他说明
+
+本项目为个人爱好的产出成果，部分内容间接或直接来源于互联网，如有侵权请及时联系，将第一时间移除。
