@@ -25,7 +25,7 @@ local function sendDanmuku(msg)
     local link = "https://api.live.bilibili.com/msg/send"
             .. "?color=16777215&fontsize=25&mode=1&msg=" .. content
             .. "&rnd=" .. userRND
-            .. "&roomid=" .. RoomID
+            .. "&roomid=" .. roomID
             .. "&bubble=0"
             .. "&csrf_token=".. userCSRF
             .. "&csrf=".. userCSRF
@@ -60,7 +60,7 @@ chooser:queryChangedCallback(function(string)
     local choices = {
         {
             ["text"] = "发送弹幕：" .. string,
-            ["subText"] = "到直播间 " .. roomName .. " (" .. RoomID .. ")",
+            ["subText"] = "到直播间 " .. roomName .. " (" .. roomID .. ")",
             ["msg"] = string
            }
     }

@@ -1,5 +1,6 @@
 -- 房间信息 --
-RoomID = ""
+roomID = ""
+refreshTime = 600 
 
 -- 用户个人信息 --
 userRND = ""

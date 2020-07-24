@@ -1,6 +1,11 @@
 # bililive-helper
 
-一个用于 Bilibili 直播的 Hammerspoon 小工具，可以查看部分房间信息，快速到达直播间和直播设置页面，发送弹幕和显示弹幕悬浮窗。
+一个用于 Bilibili 直播的 Hammerspoon 小工具。
+目前实现的功能有：
+- 显示房间信息
+- 快速打开直播间和直播设置页面
+- 显示弹幕悬浮窗
+- 快捷键发送弹幕
 
 弹幕悬浮窗使用的是 [bilibili-live-chat](https://github.com/Tsuk1ko/bilibili-live-chat) ，很好用的一个工具！快去 Star ！
 
@@ -23,8 +28,9 @@
 
 ```
 -- 房间信息 -- 
-RoomID = "" -- 房间ID
+roomID = "" -- 房间ID
 -- 直播间网址后面的数字，例如 https://live.bilibili.com/1283366 则填写 1283366
+refreshTime = 600 -- 菜单中房间信息的刷新时间，单位：秒
 
 -- 用户个人信息 --
 -- 用于发送弹幕，如果不需要弹幕可以留空
@@ -44,6 +50,14 @@ danmakuStayTime = 20 -- 弹幕停留时间，单位：秒
 danmakuSpeed = 1000 -- 弹幕显示速度，单位：条/秒，超过的弹幕会随机忽略
 showGiftCombine = 1000 -- 弹幕合并时间，单位：毫秒
 ```
+
+
+## 快捷键
+
+- `cmd` + `ctrl` + `-` -> 打开弹幕发送面板
+- `cmd` + `ctrl` + `+` -> 显示\隐藏弹幕悬浮窗
+
+> 如需修改，请查阅 Hammerspoon 文档并修改位于 `sender.lua` 和 `viewer.lua` 的快捷键绑定代码
 
 
 ## 其他说明
