@@ -9,7 +9,7 @@ view:bringToFront(true)
 view:transparent(true)
 view:windowStyle("nonactivating")
 view:url("file://" .. os.getenv("HOME") .. "/.hammerspoon/bililive/web/livechat.html"
-    .. "#room="     .. RoomID 
+    .. "#room="     .. roomID 
     .. "&face="     .. showAvatar
     .. "&display="  .. danmakuOrder
     .. "&stay="     .. danmakuStayTime
