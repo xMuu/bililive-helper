@@ -57,7 +57,7 @@ showGiftCombine = 1000 -- 弹幕合并时间，单位：毫秒
 - `cmd` + `ctrl` + `-` -> 打开弹幕发送面板
 - `cmd` + `ctrl` + `+` -> 显示\隐藏弹幕悬浮窗
 
-> 如需修改，请查阅 Hammerspoon 文档并修改位于 `sender.lua` 和 `viewer.lua` 的快捷键绑定代码
+> 如需修改，请查阅 Hammerspoon 文档并修改位于 `sender.lua` 和 `viewer.lua` 的快捷键绑定代码。
 
 
 ## 其他说明
